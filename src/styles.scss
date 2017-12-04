@@ -1,0 +1,62 @@
+/* import SDX */
+//sass variables
+@import '~sdx/stylesheets/sdx/variables';
+//css
+@import '~sdx/dist/css/sdx.css';
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: $color-horizon-40;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.page {
+  min-height: 70vh;//TODO: 100vh - header - footer
+}
+.card--paper {
+  background: $color-sc-white;
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 14px 12px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  &::before {
+    display: none;
+  }
+
+  h3 {
+    font-size: 20px;
+    color: $color-gray;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 16px;
+    color: $color-gray-mid;
+  }
+}
+
+.card__header {
+  position: relative;
+
+  .card-info {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    color: $color-int-blue;
+  }
+}

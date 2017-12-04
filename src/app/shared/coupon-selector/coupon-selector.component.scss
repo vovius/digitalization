@@ -1,0 +1,26 @@
+//sass variables
+@import '~sdx/stylesheets/sdx/variables';
+.coupon-selector {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid $color-gray-light;
+  border-radius: 5px;
+}
+
+input[type="radio"]:checked + label {
+  border-width: 2px;
+  border-color: $color-sc-blue;
+}

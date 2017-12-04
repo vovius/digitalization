@@ -1,0 +1,25 @@
+     <!--data-init="auto"-->
+<div class="progress-light"
+     id="progress"
+     [attr.value]="value"
+     [attr.total]="total">
+  <button class="arrow arrow&#45;&#45;left">
+    <i class="icon icon-014-chevron-left" aria-hidden="true"></i>
+  </button>
+  <button class="arrow arrow&#45;&#45;right">
+    <i class="icon icon-015-chevron-right" aria-hidden="true"></i>
+  </button>
+  <div class="progress-light__detail">
+    <span class="detail__currentpage">{{value}}</span>
+    <span class="detail__of"> of </span>
+    <span class="detail__totalpage">{{total}}</span>
+  </div>
+  <div class="progress-light__bar">
+    <div *ngFor="let tick of ticks"
+      class="bar__tick"
+         [style.left]="100/total*tick+'%'"></div>
+    <div class="bar__progress"
+         [ngClass]="{'bar__progress--complete' : complete}"
+         [style.width]="progress + '%'"></div>
+  </div>
+</div>

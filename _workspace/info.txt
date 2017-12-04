@@ -1,0 +1,105 @@
+
+Three "static" pages:
+ - Overview
+ - Explaining the order process
+ - Help page: external page
+
+Two order process
+ - Physical products
+  - Basic Overview
+  - Select medium type
+  - Overview with added medium
+  - Input personal data
+  - Summary
+  - Choose Payment
+  - ???
+  - Thank you page
+  - Error page
+
+ - Coupons
+  - Choose amount + message
+  - Input personal data
+  - Summary
+  - Choose Payment
+  - ???
+  - Thank you page
+  - Error page
+
+ - Payment process
+ - API
+  - Coupon ordering
+  - Digitalise ordering
+  - Payment
+   - trustAsResourceUrl
+   - https://www.datatrans.ch/showcase/authorisation/lightbox-mode
+   - 	4900000000000086	12/2018 or 06/2018	123
+   - https://pilot.datatrans.biz/upp/payment/js/datatrans-1.0.2.js
+    {
+      name: 'local-development',
+      apiEndpoint: 'http://0.0.0.0:9082/api/',
+      enableDebugInfo: true,
+      merchantId: '1100005905',
+      merchantSignId: '1468848226741',
+      analyticsEnv: 'dev',
+      myCloudEnv: 'dev',
+      dataTransJS: 'https://pilot.datatrans.biz/upp/payment/js/datatrans-1.0.2.js',
+      conversionAdWordsImage: false
+    }
+    {
+      name: 'int-development',
+      apiEndpoint: getApiEndpoint(intEnv),
+      enableDebugInfo: true,
+      merchantId: '1100005906',
+      merchantSignId: '1468848242791',
+      analyticsEnv: 'dev',
+      myCloudEnv: 'int',
+      dataTransJS: 'https://pilot.datatrans.biz/upp/payment/js/datatrans-1.0.2.js',
+      conversionAdWordsImage: false
+    }
+    {
+      name: 'test-development',
+      apiEndpoint: getApiEndpoint(testEnv),
+      enableDebugInfo: true,
+      merchantId: '1100005907',
+      merchantSignId: '1468848256815',
+      analyticsEnv: 'qa',
+      myCloudEnv: 'test',
+      dataTransJS: 'https://pilot.datatrans.biz/upp/payment/js/datatrans-1.0.2.js',
+      conversionAdWordsImage: false
+    }
+    {
+      name: 'prod-production',
+      apiEndpoint: getApiEndpoint(prodEnv),
+      enableDebugInfo: false,
+      merchantId: '3000010303',
+      merchantSignId: '160825134151495691',
+      analyticsEnv: 'prod',
+      myCloudEnv: 'prod',
+      dataTransJS: 'https://payment.datatrans.biz/upp/payment/js/datatrans-1.0.2.js',
+      conversionAdWordsImage: true
+    }
+  - myCloud confirmation: https://digi-api.prod.mdl.swisscom.ch/api/mycloud/
+
+- Add CHANGELOG.md
+- Add Adobe Analitics
+
+Questions:
+- How does payment work? plugin of some sort
+- myCloud account confirmation? No, not needed anymore
+- ngx-translate! (Crowding)
+
+## Translations
+ - https://crowdin.com
+
+## Payment
+ DataTrans payment api
+ - https://www.datatrans.ch/showcase/authorisation/lightbox-mode
+
+
+Timeline:
+Estimated: 4.5 weeks
+Deadline frontend: 17 november
+Live on: 16-23th november
+
+Projectmanager: Belén (& Mario Brolle)
+

@@ -1,0 +1,27 @@
+<div [formGroup]="formGroup"
+     class="card card--paper card--rounded">
+  <div class="row">
+    <div class="col-xs-12">
+      <dmc-progress-bar [value]="progressValue" [total]="progressTotal"></dmc-progress-bar>
+    </div>
+  </div>
+  <div class="row cart-total">
+    <div class="col-xs-9">
+      <label for="cart_total" [translate]="'cart.totalPrice'"></label>
+    </div>
+    <div class="col-xs-3 text-align-right">
+      <span id="cart_total">{{ totalPrice }} CHF</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 text-align-right">
+      <input (click)="submitForm()"
+             [disabled]="formGroup.invalid"
+             value="{{ 'cart.' + name | translate }}"
+             class="margin-v-2 button"
+             [ngClass]="progressValue === progressTotal ? 'button--confirm' : 'button--primary'"
+             type="button"/>
+    </div>
+  </div>
+</div>

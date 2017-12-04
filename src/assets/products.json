@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1507328,
+    "type": "DIG_P_ALB",
+    "price": 2.0,
+  },
+  {
+    "id": 1507329,
+    "type": "DIG_P_NEG",
+    "price": 0.9,
+  },
+  {
+    "id": 1507330,
+    "type": "DIG_P_SLD",
+    "price": 0.9,
+  },
+  {
+    "id": 1507331,
+    "type": "DIG_P_PAP",
+    "price": 0.9,
+  },
+  {
+    "id": 1507332,
+    "type": "DIG_V",
+    "price": 19.0,
+  },
+  {
+    "id": 1507333,
+    "type": "DIG_F_S",
+    "price": 16.0,
+  },
+  {
+    "id": 1507334,
+    "type": "DIG_F_M",
+    "price": 48.0,
+  },
+  {
+    "id": 1507335,
+    "type": "DIG_F_L",
+    "price": 84.0,
+  }
+]

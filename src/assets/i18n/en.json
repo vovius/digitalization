@@ -1,0 +1,87 @@
+{
+  "landing": {
+    "title": "Digitalise your dreams into the clouds"
+  },
+  "info": {
+    "title": "So you need help with the order process, do you?"
+  },
+  "order": {
+    "title": "Order everything!"
+  },
+  "coupon": {
+    "title": "Give the gift that you buy!"
+  },
+  "personalInfo": {
+    "title": "Enter your personal info",
+    "info": {
+      "header": "Digitalisierung als Geschenk",
+      "body": "Machen Sie Ihren Liebsten eine Freude und verschenken Sie einen Gutschein von myCloud Digitalisierung. So können Sie die Erinnerungen zusammen wiedererleben. Den Gutscheincode erhalten Sie bequem nach Zahlungseingang per E-Mail als PDF."
+    },
+    "summaryButton": "Summary"
+  },
+  "summary": {
+    "title": "Preview",
+    "info": {
+      "header": "Zusammenfassung",
+      "body": "Machen Sie Ihren Liebsten eine Freude und verschenken Sie einen Gutschein von myCloud Digitalisierung. So können Sie die Erinnerungen zusammen wiedererleben. Den Gutscheincode erhalten Sie bequem nach Zahlungseingang per E-Mail als PDF."
+    },
+    "summaryButton": "Summary"
+  },
+  "cart": {
+    "title": "Gutschein",
+    "info": {
+      "header": "Summary",
+      "body": "Machen Sie Ihren Liebsten eine Freude und verschenken Sie einen Gutschein von myCloud Digitalisierung. So können Sie die Erinnerungen zusammen wiedererleben. Den Gutscheincode erhalten Sie bequem nach Zahlungseingang per E-Mail als PDF."
+    },
+    "personalize": {
+      "header": "Personalisieren",
+      "body": "Versehen Sie den Gutschein mit einer persönlichen Nachricht (max. 300 Zeichen)."
+    },
+    "totalPrice": "Total",
+    "personalInfo": "Personalien erfassen",
+    "personalMessage": {
+      "placeholder": "Ihre persönliche Nachricht",
+      "label": "Ihre persönliche Nachricht"
+    }
+  },
+  "input": {
+    "name": {
+      "label": "Last name",
+      "placeholder": "Last name",
+      "required": "Last name is required"
+    },
+    "firstName": {
+      "label": "First name",
+      "placeholder": "First name",
+      "required": "First name is required"
+    },
+    "email": {
+      "label": "E-Mail",
+      "placeholder": "E-Mail",
+      "required": "E-Mail is required"
+    },
+    "street": {
+      "label": "Street",
+      "placeholder": "Street",
+      "required": "Street is required"
+    },
+    "zipcode": {
+      "label": "Zipcode",
+      "placeholder": "Zipcode",
+      "required": "Zipcode is required"
+    },
+    "totalPrice": {
+      "label": "Total price"
+    },
+    "city": {
+      "label": "City",
+      "placeholder": "City",
+      "required": "City is required"
+    }
+  },
+  "menu": {
+    "landing": "Overview",
+    "orderInfo": "Order information",
+    "help": "Help"
+  }
+}

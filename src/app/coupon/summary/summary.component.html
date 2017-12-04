@@ -1,0 +1,24 @@
+<form [formGroup]="summaryForm">
+
+  <h2 class="navy" [translate]="'summary.title'"></h2>
+
+  <div class="card card--paper card--rounded">
+    <div class="card__header">
+      <h3 [translate]="'summary.info.header'"></h3>
+    </div>
+
+    <dmc-field-list [fields]="formFields"></dmc-field-list>
+  </div>
+
+  <dmc-coupon-template-selector></dmc-coupon-template-selector>
+
+  <dmc-cart-progress
+    [formGroup]="summaryForm"
+    [name]="page"
+    [progressValue]="3"
+    [progressTotal]="3"
+    (submit)="submitForm()"
+    [totalPrice]="this.totalPrice">
+  </dmc-cart-progress>
+
+</form>

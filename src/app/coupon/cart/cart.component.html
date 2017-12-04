@@ -1,0 +1,51 @@
+<form [formGroup]="cartForm">
+
+  <h2 class="navy" [translate]="'cart.title'"></h2>
+
+  <div class="card card--paper card--rounded">
+    <div class="card__header">
+      <h3 [translate]="'cart.info.header'"></h3>
+      <i class="icon icon-046-information-circle icon--s2 card-info" aria-hidden="true"></i>
+    </div>
+    <p class="card__body"
+       [translate]="'cart.info.body'">
+    </p>
+    <dmc-coupon-selector [formGroup]="cartForm"
+                         [coupons]="coupons"
+                         (onSelectCoupon)="onSelectCoupon($event)">
+    </dmc-coupon-selector>
+  </div>
+
+  <div class="card card--paper card--rounded">
+    <div class="card__header">
+      <h3 [translate]="'cart.personalize.header'"></h3>
+    </div>
+    <p class="card__body"
+       [translate]="'cart.personalize.body'">
+    </p>
+
+    <div class="input-field input-multiline" data-init="auto">
+      <textarea id="personal_message"
+                formControlName="personalMessage"
+                [ngClass]="{'is-fixed': cartForm.value.personalMessage}"
+                placeholder="{{ 'cart.personalMessage.placeholder' | translate }}"
+                [attr.maxLength]="personalMessageMaxLength"
+                rows="5"
+                data-min-rows="1"
+                data-max-rows="1"
+                required></textarea>
+      <label for="personal_message">{{ 'cart.personalMessage.label' | translate }}</label>
+    </div>
+
+  </div>
+
+  <dmc-cart-progress
+    [formGroup]="cartForm"
+    [name]="page"
+    [progressValue]="1"
+    [progressTotal]="3"
+    (submit)="submitForm()"
+    [totalPrice]="totalPrice">
+  </dmc-cart-progress>
+
+</form>

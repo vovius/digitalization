@@ -1,0 +1,8 @@
+<div *ngFor="let key of fieldKeys" class="row margin-v-1">
+  <div class="col-xs-3">
+    <span class="field-name">{{ 'input.' + key + '.label' | translate }}:</span>
+  </div>
+  <div class="col-xs-9 text-align-right">
+    <span class="field-value">{{ fields[key] }}</span>
+  </div>
+</div>

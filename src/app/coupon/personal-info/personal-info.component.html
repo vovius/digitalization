@@ -1,0 +1,40 @@
+<form [formGroup]="personalInfoForm">
+
+  <h2 class="navy" [translate]="'personalInfo.title'"></h2>
+
+  <div class="card card--paper card--rounded">
+
+    <dmc-input [formGroup]="personalInfoForm"
+               [name]="'firstName'"
+               required></dmc-input>
+    <dmc-input [formGroup]="personalInfoForm"
+               [name]="'name'"
+               required></dmc-input>
+    <dmc-input [formGroup]="personalInfoForm"
+               [name]="'email'"
+               [type]="'email'"
+               required></dmc-input>
+
+    <div *ngIf="orderDigitalProducts">
+      <dmc-input [formGroup]="personalInfoForm"
+                 [name]="'street'"
+                 required></dmc-input>
+      <dmc-input [formGroup]="personalInfoForm"
+                 [name]="'zipcode'"
+                 required></dmc-input>
+      <dmc-input [formGroup]="personalInfoForm"
+                 [name]="'city'"
+                 required></dmc-input>
+    </div>
+  </div>
+
+  <dmc-cart-progress
+    [formGroup]="personalInfoForm"
+    [name]="page"
+    [progressValue]="2"
+    [progressTotal]="3"
+    (submit)="submitForm()"
+    [totalPrice]="totalPrice">
+  </dmc-cart-progress>
+
+</form>

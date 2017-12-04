@@ -1,0 +1,19 @@
+{
+  "landing": {
+    "title": "Digitalise your dreams into the clouds"
+  },
+  "info": {
+    "title": "So you need help with the order process, do you?"
+  },
+  "order": {
+    "title": "Order everything!"
+  },
+  "coupon": {
+    "title": "Give the gift that you buy!"
+  },
+  "menu": {
+    "landing": "Overview",
+    "orderInfo": "Order information",
+    "help": "Help"
+  }
+}

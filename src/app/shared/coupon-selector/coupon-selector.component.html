@@ -1,0 +1,19 @@
+<div [formGroup]="formGroup"
+     class="coupon-selector">
+  <span *ngFor="let coupon of coupons">
+    <input (click)="select(coupon)"
+           type="radio"
+           formControlName="coupon"
+           value="{{coupon}}"
+           id="coupon-{{coupon}}"
+           required/>
+    <label
+      for="coupon-{{coupon}}">CHF {{coupon}}</label>
+  </span>
+</div>
+
+<div class="message"
+     *ngIf="invalid">
+  <i class="icon icon-026-exclamation-mark-circle" aria-hidden="true"></i>
+  Error Message
+</div>

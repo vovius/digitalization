@@ -1,0 +1,14 @@
+<div class="breadcrumb">
+  <span *ngFor="let breadcrumb of currentBreadcrumbs; let last = last">
+    <span *ngIf="!last">
+      <a class="link"
+         [routerLink]="[breadcrumb.link]">
+        <span [translate]="breadcrumb.name">{{breadcrumb.name}}</span>
+      </a>
+      >
+    </span>
+
+    <span *ngIf="last"
+          [translate]="breadcrumb.name">{{breadcrumb.name}}</span>
+  </span>
+</div>

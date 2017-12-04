@@ -1,0 +1,120 @@
+<div class="nav" data-init="auto">
+  <nav class="nav__level0" role="navigation">
+    <div class="nav__mainnav">
+      <div class="container-fluid">
+        <div class="nav__primary">
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="https://mycloud.ch"
+                 target="_blank"
+                 rel="noopener"
+                 class="nav-link nav-link--header">
+                <span class="text-underline">myCloud</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://transfer.mycloud.ch"
+                 target="_blank"
+                 rel="noopener"
+                 class="nav-link nav-link--header">
+                <span class="text-underline">Transfer</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link--active">
+                <span class="text-underline">Moments</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav__level1" role="navigation">
+    <div class="container-fluid">
+      <a [routerLink]="['/']"
+        class="logo" tabindex="-1">
+        <span class="logo-lifeform" aria-label="Swisscom Logo"></span>
+        <span class="logo-type"><img src="assets/sdx/images/svgs/swisscom-logo-type.svg" alt="Swisscom"></span>
+      </a>
+      <div class="nav__mainnav">
+        <div class="nav__primary" style="">
+          <ul class="nav-items">
+            <li class="nav-item js-subnav">
+              <a [routerLink]="['/landing']"
+                 class="nav-link nav-link--header">
+                <span class="text-underline" [translate]="'menu.landing'"></span>
+              </a>
+            </li>
+            <li class="nav-item js-subnav">
+              <a [routerLink]="['/info']"
+                 class="nav-link nav-link--header">
+                <span class="text-underline" [translate]="'menu.orderInfo'"></span>
+              </a>
+            </li>
+            <li class="nav-item js-subnav">
+              <a class="nav-link nav-link--header"
+                 href="https://swisscom.ch">
+                <span class="text-underline" [translate]="'menu.help'"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__secondary">
+          <ul class="nav-items">
+            <li class="nav-item nav-item--cart">
+              <a class="nav-icon" [ngClass]="{'badge badge--icon': showShoppingCartBadge}" aria-label="Warenkorb">
+                <i class="icon icon-079-shopping-trolley" aria-hidden="true"></i>
+                <span *ngIf="showShoppingCartBadge" class="badge__content">{{orderCount}}</span>
+              </a>
+            </li>
+            <li class="nav-item hidden-phone-down nav-item--language">
+              <button (click)="toggleLangMenu(!langMenuOpen)"
+                      id="flyout-button"
+                      class="language-selector"
+                      data-init="auto"
+                      data-toggle="flyout"
+                      data-target="#flyout-list">
+                <span>{{currentLanguage}}</span>
+                <i class="icon icon--s2"
+                   [ngClass]="langMenuOpen ? 'icon-020-chevron-flat-up' : 'icon-017-chevron-flat-down'"></i>
+              </button>
+
+              <div id="flyout-list" class="flyout flyout--list flyout--right js-flyout">
+                <ul>
+                  <li class="text-align-center">
+                    <a (click)="changeLanguage('de')"
+                       class="list-link flyout__indicator">
+                      Deutsch
+                    </a>
+                  </li>
+                  <li class="text-align-center">
+                    <a (click)="changeLanguage('en')"
+                       class="list-link">
+                      English
+                    </a>
+                  </li>
+                  <li class="text-align-center">
+                    <a (click)="changeLanguage('fr')"
+                       class="list-link">
+                      Français
+                    </a>
+                  </li>
+                  <li class="text-align-center">
+                    <a (click)="changeLanguage('it')"
+                       class="list-link">
+                      Italiano
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item hidden-tablet-up">
+              <a class="nav-icon nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

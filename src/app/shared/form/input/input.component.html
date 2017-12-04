@@ -1,0 +1,26 @@
+<div [formGroup]="formGroup"
+     class="input-field input-field--fixed"
+     data-init="auto">
+
+  <input type="text"
+         [formControlName]="name"
+         [id]="name"
+         placeholder="{{'input.' + name + '.placeholder' | translate}}"
+         [ngClass]="{
+               'validate valid': valid,
+               'validate invalid invalid--inline': invalid,
+               'is-fixed': hasContent
+             }"
+         required>
+  <label [for]="name"
+         [translate]="'input.' + name + '.label'"></label>
+
+  <i *ngIf="valid" class="icon icon-011-check-mark" aria-hidden="true"></i>
+  <i class="icon icon-026-exclamation-mark-circle" aria-hidden="true"></i>
+  <div [hidden]="!invalid"
+       class="message">
+    <i class="icon icon-026-exclamation-mark-circle" aria-hidden="true"></i>
+    {{'input.' + name + '.required' | translate}}
+  </div>
+
+</div>

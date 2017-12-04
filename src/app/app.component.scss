@@ -1,0 +1,20 @@
+@import '~sdx/stylesheets/sdx/variables';
+
+.container-fluid {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.landing {
+  //min-height: 100%;
+}
+
+.landing-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  //background-color: $color-sc-white;
+  box-shadow: 0 0 30px #dddddd;
+}
+
